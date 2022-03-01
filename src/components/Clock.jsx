@@ -54,6 +54,7 @@ const Clock = ({ setDuration }) => {
 			sound.currentTime = 0;
 			clearInterval(interval);
 		};
+		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, []);
 
 	return (

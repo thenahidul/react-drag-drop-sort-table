@@ -61,12 +61,10 @@ function App() {
 
 			return;
 		}
-		// return false;
 	};
 
 	const handleChange = (input) => {
 		const { name, value } = input;
-		// console.log(input.getAttribute("data-label"));
 
 		const label = input.getAttribute("data-label") || value;
 
