@@ -14,7 +14,6 @@ function App() {
 	const [playStart, setPlayStart] = useState(false);
 	const [count, setCount] = useState(10);
 	const [people, setPeople] = useState([]);
-	const [sorted, setSorted] = useState(false);
 
 	const [sortData, setSortData] = useState({
 		order: { label: "Ascending", value: "asc" },
@@ -58,7 +57,6 @@ function App() {
 
 		if (_sorted) {
 			setPlayStart(false);
-			setSorted(true);
 			setEndModal(true);
 
 			return;
@@ -123,7 +121,7 @@ function App() {
 								</p>
 								<p>
 									Sort by:
-									<span className="fw-500 primary-color">
+									<span className="ms-1 fw-500 primary-color">
 										{sortData.sortBy.label}
 									</span>
 								</p>
